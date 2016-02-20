@@ -1,0 +1,11 @@
+  - name: centos:6
+    id: centos
+    release: 6
+    image: centos:6
+    codename: 6
+
+  - name: redhat:6
+    id: centos
+    release: 6
+    image: centos:6
+    codename: 6Server
