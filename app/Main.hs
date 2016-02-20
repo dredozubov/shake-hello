@@ -30,5 +30,4 @@ main = shakeArgs shakeOptions{shakeFiles="build"} $ do
     fileContent <- liftIO (B.readFile "images.yml")
     let images :: Either String [Image]
         images = decodeEither fileContent
-    liftIO (print images)
-    liftIO (writeFile "build/images" "Ok")
+    cmd "touch" "build/images"
